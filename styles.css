@@ -34,18 +34,25 @@ body {
     padding-bottom: 1rem;
 }
 
-.tv-group {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0;
 }
 
 .overlay {
     width: 100%;
     height: auto;
     z-index: 1;
+}
+
+.tv-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 1rem;
 }
 
 .tv-group .image {
@@ -55,35 +62,15 @@ body {
     height: 55%;
 }
 
-.device-group .image {
-    position: absolute;
-    top: 9%;
-    width: 50%;
-}
-
-.device-group {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.subtitle {
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin: 0;
-}
-
-.image {
-    width: 500px;
-}
-
 .phone-group {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+}
+
+.phone-group img {
+    width: 500px;
 }
 
 .bar {
@@ -132,18 +119,32 @@ body {
     max-width: 50px;
 }
 
+.device-group .image {
+    position: absolute;
+    top: 9%;
+    width: 50%;
+}
+
+.device-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 @media screen and (max-width: 1000px) {
     .card {
         flex-flow: column;
         flex-direction: column;
     }
 
-    .bar {
-        width: 300px;
+    .phone-group img {
+        width: 600px;
     }
 
-    .image {
-        width: 600px;
+    .bar {
+        width: 300px;
     }
 
     .text {
