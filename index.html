@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css" >
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans"/>
+    <link rel="stylesheet" href="./styles.css" />
     <title>Netflix - Watch TV Shows Online, Watch Movies</title>
 </head>
 <body>
@@ -14,7 +16,10 @@
             <h1 class="title">Enjoy on your TV.</h1>
             <h2 class="subtitle">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h2>
         </header>
-        <img class="image" alt="Spongebob Watching TV" src="./images/spongebob-tv.webp" />
+        <div class="tv-group">
+            <img class="overlay" alt="TV" src="./images/tv.png" />
+            <img class="image" alt="Spongebob Watching TV" src="./images/spongebob-tv.webp" />
+        </div>
     </section>
 
     <section class="card reverse">
@@ -22,9 +27,8 @@
             <h1 class="title">Download yours shows to watch offline.</h1>
             <h2 class="subtitle">Save your favorites easily and always have something to watch.</h2>
         </header>
-        <div class="image-group">
-            <img class="image" alt="Stranger Things Phone" class="our-story-card-img"
-                src="./images/stranger-phone.jpg">
+        <div class="phone-group">
+            <img class="image" alt="Stranger Things Phone" class="our-story-card-img" src="./images/stranger-phone.jpg">
             <div class="bar">
                 <div class="bar-image">
                     <img alt="Stranger Things Poster" src="./images/stranger-poster.png">
@@ -38,7 +42,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <section class="card">
@@ -46,7 +49,10 @@
             <h1 class="title">Watch everywhere.</h1>
             <h2 class="subtitle">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying move.</h2>
         </header>
-        <img class="image" alt="Thumbs Up" src="./images/thumbs-up.webp" />
+        <div class="device-group">
+            <img class="overlay" alt="Device Pile" src="./images/device-pile.png" />
+            <img class="image" alt="Thumbs Up" src="./images/thumbs-up.webp" />
+        </div>
     </section>
 </main>
 </body>

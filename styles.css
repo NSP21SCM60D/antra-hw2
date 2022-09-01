@@ -34,6 +34,41 @@ body {
     padding-bottom: 1rem;
 }
 
+.tv-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.overlay {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.tv-group .image {
+    position: absolute;
+    top: 20%;
+    width: auto;
+    height: 55%;
+}
+
+.device-group .image {
+    position: absolute;
+    top: 9%;
+    width: 50%;
+}
+
+.device-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .subtitle {
     font-size: 1.5rem;
     font-weight: 100;
@@ -44,26 +79,26 @@ body {
     width: 500px;
 }
 
-.image-group {
-    width: 500px;
+.phone-group {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .bar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: absolute;
     border: 2px solid #353135;
-    align-items: center;
     background-color: black;
     border-radius: .75em;
     box-shadow: 0 0 2em 0 black;
     min-width: 15em;
-    justify-content: space-between;
     padding: .25em .65em;
-    transform: translateY(-1.25em);
     width: 15%;
+    transform: translateY(-2em);
 }
 
 .bar-image {
